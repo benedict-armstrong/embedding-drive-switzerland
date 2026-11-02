@@ -1,0 +1,17 @@
+{
+  "format": 1,
+  "name": "Switzerland Edition",
+  "description": "A hundred Swiss places and things: cities, peaks, lakes, passes, cheese, watches, institutions and famous Swiss, laid out by meaning.",
+  "author": "Benedict Armstrong",
+  "nodes": 100,
+  "titles": "titles.txt",
+  "vectors": "vectors.bin",
+  "knn": "knn.bin",
+  "embedding": {
+    "model": "onnx-community/embeddinggemma-300m-ONNX",
+    "dtype": "q8",
+    "prefix": "task: sentence similarity | query: ",
+    "pooling": "mean",
+    "dim": 768
+  }
+}
