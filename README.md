@@ -13,3 +13,5 @@ Open it in the game from **World → Community maps**, or paste `benedict-armstr
 - `nodes.json`: labels and Wikipedia links per place, for the next version of the map format.
 
 Rebuilt with the game's `scripts/embed-vocab.mjs` and `scripts/build-knn.mjs`.
+
+Re-embedded with EmbeddingGemma 2 (`onnx-community/embeddinggemma-2-ONNX`, text only, q8, mean pooling, sentence-similarity prefix, 768 dimensions). Neighbour tables were regenerated from the new vectors. This changes the generated world; existing commit-pinned links still load their original map.
